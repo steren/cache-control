@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.set('Cache-Control', header);
   res.send(`
     API: <a href="/?maxAge=${maxAge}&sMaxAge=${sMaxAge}">/?maxAge=${maxAge}&sMaxAge=${sMaxAge}</a><br>
-    Warning: Chrome will ignore the max-age header if you use the Reload button, paste URL in new tab.<br>
+    Warning: Chrome will ignore the max-age header if you use the Reload button, click the link above instead.<br>
     This request:<br>
     Cache-Control: ${header}<br>
     Date recorded:<br>
